@@ -1,4 +1,4 @@
-module github.com/Zohari-Tech/core_protobuff
+module github.com/Zohari-Tech/core_proto
 
 go 1.16
 

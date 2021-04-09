@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+
+package proto;
+option go_package = "/;proto";
+
+
+message SessionData {
+  string phonenumber = 1;
+  string clientSessionid = 2;
+  string messageId = 3;
+  string sessionId = 4;
+  string service = 5;
+
+}
+
+
+message SessionRequest {
+  string input = 1;
+  SessionData data = 2;
+}
+
+message SessionResponse {
+    string response = 1;
+    SessionData data = 2;
+    string messageTitle = 3;
+}
+
+service NavigationService {
+    rpc Navigate (SessionRequest) returns (SessionResponse) {}
+}

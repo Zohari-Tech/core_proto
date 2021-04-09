@@ -1,5 +1,5 @@
 package main
 
-func maine() {
+func main() {
 
 }

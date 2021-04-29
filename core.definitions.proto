@@ -18,12 +18,14 @@ message SessionData {
 message SessionRequest {
   string input = 1;
   SessionData data = 2;
+  int32 timestamp = 3;
 }
 
 message SessionResponse {
     string response = 1;
     SessionData data = 2;
     string messageTitle = 3;
+    int32 timestamp = 4;
 }
 
 service NavigationService {

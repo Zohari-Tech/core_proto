@@ -11,6 +11,8 @@ message SessionData {
   string messageId = 3;
   string sessionId = 4;
   string service = 5;
+  string serviceCode = 6;
+  string organization = 7;
 
 }
 
